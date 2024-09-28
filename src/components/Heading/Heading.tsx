@@ -1,3 +1,5 @@
+import './Heading.css'
+
 export function Heading() {
-    return <h1>Speed Reading</h1>
+    return <h1 className='heading'>Speed Reading</h1>
 }
