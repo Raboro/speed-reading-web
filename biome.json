@@ -20,6 +20,13 @@
     }
   },
   "files": {
-    "ignore": ["node_modules/", ".idea", "assets", "bun.lockb", "public"]
+    "ignore": [
+      "node_modules/",
+      ".idea",
+      "assets",
+      "bun.lockb",
+      "public",
+      "tsconfig.*"
+    ]
   }
 }
