@@ -1,7 +1,8 @@
 import './App.css';
+import { Heading } from './components/Heading/Heading.tsx'
 
 function App() {
-  return <p>Test</p>;
+  return <Heading />;
 }
 
 export default App;
