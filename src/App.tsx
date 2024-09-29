@@ -9,9 +9,7 @@ function App() {
   const [text, setText] = useState<Text>(new Text(''));
   const [word, setWord] = useState<string>('');
 
-  const collectText = (collectedText: string) => {
-    setText(new Text(collectedText));
-  };
+  const collectText = (text: string) => setText(new Text(text));
 
   useEffect(() => {
     const timeout = setTimeout(() => {
