@@ -5,4 +5,8 @@ export class Text {
   constructor(text: string) {
     this.words = text.split(" ").filter((word) => word.length > 0);
   }
+
+  get(): string {
+    return this.words[this.index++];
+  }
 }
