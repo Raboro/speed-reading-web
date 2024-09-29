@@ -15,3 +15,8 @@
     box-shadow: rgba(0, 0, 0, 0.253) 0px 3px 10px;
     transition-duration: 200ms;
 }
+
+.buttonContainer:active {
+    transition-duration: 500ms;
+    scale: 1.005
+}
