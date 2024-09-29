@@ -3,6 +3,7 @@ import './App.css';
 import { Heading } from './components/Heading/Heading.tsx';
 import { TextInput } from './components/TextInput/TextInput.tsx';
 import { Text } from './data/Text.ts';
+import { Word } from './components/Word/Word.tsx';
 
 function App() {
   const [text, setText] = useState<Text>(new Text(''));
@@ -14,6 +15,7 @@ function App() {
     <div className="mainContainer">
       <Heading />
       <TextInput collectText={collectText} />
+      <Word word="test" />
     </div>
   );
 }
