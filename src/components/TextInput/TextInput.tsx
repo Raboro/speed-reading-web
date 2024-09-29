@@ -1,3 +1,10 @@
 export function TextInput() {
-    return <input type="text" />
+  return (
+    <div>
+      <label>
+        Text Input
+        <textarea name="TextInput" defaultValue="Reading Text" />
+      </label>
+    </div>
+  );
 }
