@@ -1,0 +1,17 @@
+.buttonContainer {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.096) 0px 2px 5px;
+    transition-duration: 200ms;
+    padding: 5%;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+}
+
+.buttonContainer:hover {
+    box-shadow: rgba(0, 0, 0, 0.253) 0px 3px 10px;
+    transition-duration: 200ms;
+}
