@@ -5,12 +5,14 @@ interface WordSpeedProps {
   onWpsChange: (wps: number) => void;
 }
 
+const SECONDS_PER_MINUTE = 60;
+
 export function WordSpeed(props: Readonly<WordSpeedProps>) {
-  const [wps, setWps] = useState<number>(60);
+  const [wps, setWps] = useState<number>(SECONDS_PER_MINUTE);
 
   const calculateWPS = (value: number) => {
     setWps(value);
-    props.onWpsChange(value === 0 ? 0 : value / 60);
+    props.onWpsChange(value === 0 ? 0 : value / SECONDS_PER_MINUTE);
   };
 
   return (
@@ -19,7 +21,7 @@ export function WordSpeed(props: Readonly<WordSpeedProps>) {
         type="range"
         list="markers"
         max={600}
-        defaultValue={60}
+        defaultValue={SECONDS_PER_MINUTE}
         onChange={(event) =>
           calculateWPS(event.target.value as unknown as number)
         }
