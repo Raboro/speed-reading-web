@@ -10,11 +10,7 @@ export function WordSpeed(props: Readonly<WordSpeedProps>) {
 
   const calculateWPS = (value: number) => {
     setWps(value);
-    if (value === 0) {
-      props.onWpsChange(0);
-      return;
-    }
-    props.onWpsChange(value / 60);
+    props.onWpsChange(value === 0 ? 0 : value / 60);
   };
 
   return (
