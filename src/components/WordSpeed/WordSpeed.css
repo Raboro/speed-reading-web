@@ -1,0 +1,7 @@
+.wordSpeedContainer {
+    width: 100%;
+}
+
+.wordSpeedContainer>input {
+    width: 100%;
+}
