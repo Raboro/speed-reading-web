@@ -19,7 +19,7 @@ function App() {
     const timeout = setTimeout(() => {
       setWord(text.get());
       console.debug(word);
-    }, delay); // 1s
+    }, delay);
     return () => {
       clearTimeout(timeout);
     };
