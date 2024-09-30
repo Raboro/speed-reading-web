@@ -6,10 +6,12 @@ import { Text } from './data/Text.ts';
 import { Word } from './components/Word/Word.tsx';
 import { WordSpeed } from './components/WordSpeed/WordSpeed.tsx';
 
+const ONE_SECOND = 1000;
+
 function App() {
   const [text, setText] = useState<Text>(new Text(''));
   const [word, setWord] = useState<string>('');
-  const [delay, setDelay] = useState<number>(1000);
+  const [delay, setDelay] = useState<number>(ONE_SECOND);
 
   const collectText = (text: string) => setText(new Text(text));
 
@@ -23,7 +25,7 @@ function App() {
     };
   }, [text, word, delay]);
 
-  const onWpsChange = (wps: number) => setDelay(1000 / wps);
+  const onWpsChange = (wps: number) => setDelay(ONE_SECOND / wps);
 
   return (
     <div className="mainContainer">
